@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monirul Islam | Portfolio</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent mynav">
+      <div class="container">
+        <a class="navbar-brand" href="#">MI</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-primary ms-2" href="./resume.pdf" download
+                >Resume</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="hero" class="hero">
+      <div class="container py-5">
+        <div class="row justify-content-between">
+          <div class="col-md-7 text-left">
+            <h1 class="display-2">
+              Hi! <br />
+              <span class="text-uppercase text-primary fw-bold">
+                I'm Monirul Islam
+              </span>
+            </h1>
+            <p class="lead mb-5" style="font-size: 32px">
+              Frontend-focused Full Stack Developer
+            </p>
+            <p class="">
+              I am a frontend-focused full-stack developer passionate about
+              crafting intuitive, high-performance web applications. Proficient
+              in modern frontend technologies such as React, Next.js, and
+              Tailwind CSS, Framer Motion with hands-on experience in building
+              scalable UIs. Solid backend development skills using Node.js,
+              Express, and Prisma. Known for strong problem-solving
+              capabilities, clean code practices, and a keen eye for UX.
+              Committed to continuous learning, performance optimization, and
+              delivering production-ready solutions.
+            </p>
+            <div class="d-flex gap-3 align-items-center">
+              <a
+                href="https://github.com/codemonkmi"
+                target="_blank"
+                class="text-primary heroIconBtn"
+                ><i class="fab fa-github fa-2x"></i
+              ></a>
+              <a
+                href="https://linkedin.com/in/codemonkmi"
+                target="_blank"
+                class="text-primary heroIconBtn"
+                ><i class="fab fa-linkedin fa-2x"></i
+              ></a>
+              <a
+                href="https://facebook.com/codemonkmi"
+                target="_blank"
+                class="text-primary heroIconBtn"
+                ><i class="fab fa-facebook fa-2x"></i
+              ></a>
+              <a
+                href="https://youtube.com"
+                target="_blank"
+                class="btn btn-primary resumeBtn bg-primary heroIconBtn"
+                >Resume<i class="fa-solid fa-download"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-md-5 text-end hero_img_seciton">
+            <img
+              src="./images/profile.jpg"
+              alt="Profile Image"
+              class="hero-img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="py-5">
+      <div class="container">
+        <h2 class="display-3 fw-bold text-uppercase text-center mb-5">
+          Portfolio
+        </h2>
+        <div class="row justify-content-center">
+          <div class="col-md-10">
+            <div class="pt-5">
+              <div class="row border align-items-center">
+                <div class="col-md-6">
+                  <div
+                    id="carouselExampleControls"
+                    class="carousel slide"
+                    data-bs-ride="carousel"
+                  >
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img
+                          src="./images/portfolio/11.jpg"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="./images/portfolio/12.jpg"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                    <button
+                      class="carousel-control-prev"
+                      type="button"
+                      data-bs-target="#carouselExampleControls"
+                      data-bs-slide="prev"
+                    >
+                      <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                      class="carousel-control-next"
+                      type="button"
+                      data-bs-target="#carouselExampleControls"
+                      data-bs-slide="next"
+                    >
+                      <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <h3>Todo Enterprise</h3>
+                  <p>
+                    A robust task management system with user authentication,
+                    role-based access control, and a modern React frontend.
+                  </p>
+                  <ul>
+                    <li>User authentication and authorization</li>
+                    <li>
+                      Role-based access control with permission management
+                    </li>
+                    <li>Todo management with CRUD operations</li>
+                    <li>Modern React frontend with Shadcn-UI</li>
+                    <li>Clean architecture with domain-driven design</li>
+                    <li>Type-safe development with TypeScript</li>
+                  </ul>
+                  <span class="badge bg-secondary">TypeScript</span>
+                  <span class="badge bg-secondary"> ExpressJs</span>
+                  <span class="badge bg-secondary"> Prisma</span>
+                  <span class="badge bg-secondary">PostgressSql</span>
+                  <span class="badge bg-secondary"> ReactJs</span>
+                  <span class="badge bg-secondary"> Tailwindcss</span>
+                  <span class="badge bg-secondary">Docker</span>
+                </div>
+              </div>
+              <div class="row border mt-5 align-items-center">
+                <div class="col-md-6">
+                  <div
+                    id="carouselExampleControls2"
+                    class="carousel slide"
+                    data-bs-ride="carousel"
+                  >
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img
+                          src="./images/portfolio/11.jpg"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="./images/portfolio/12.jpg"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                    <button
+                      class="carousel-control-prev"
+                      type="button"
+                      data-bs-target="#carouselExampleControls2"
+                      data-bs-slide="prev"
+                    >
+                      <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                      class="carousel-control-next"
+                      type="button"
+                      data-bs-target="#carouselExampleControls2"
+                      data-bs-slide="next"
+                    >
+                      <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <h3>Prexress (Internal Backend Framework)</h3>
+                  <p>
+                    A robust TypeScript-based backend framework with Prisma ORM
+                    integration, following the repository pattern and dependency
+                    injection principles for building scalable and maintainable
+                    applications.
+                  </p>
+                  <ul>
+                    <li>
+                      Repository Pattern: Clean separation of data access logic
+                      from business logic
+                    </li>
+                    <li>
+                      Prisma Integration: Type-safe database access with Prisma
+                      ORM's powerful query capabilities
+                    </li>
+
+                    <li>
+                      TypeScript: Full type safety throughout the codebase to
+                      prevent runtime errors
+                    </li>
+                    <li>
+                      Middleware Support: Flexible middleware integration at
+                      both controller and route levels
+                    </li>
+                    <li>
+                      Automatic Route Registration: Reduce boilerplate with
+                      automatic route discovery and registration
+                    </li>
+                  </ul>
+
+                  <span class="badge bg-secondary">TypeScript</span>
+                  <span class="badge bg-secondary">ExpressJs</span>
+                  <span class="badge bg-secondary">Prisma</span>
+                  <span class="badge bg-secondary">Docker</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h2 class="display-3 fw-bold text-uppercase text-center mb-5">
+              Skills
+            </h2>
+            <div class="">
+              <div class="">
+                <p class="display-6 fw-bold">Frontend:</p>
+                <div class="" style="margin-left: 15px">
+                  <p class="badge mx-1 bg-secondary" style="font-size: 16px">
+                    JavaScript
+                  </p>
+                  <p class="badge mx-1 bg-secondary" style="font-size: 16px">
+                    TypeScript
+                  </p>
+                  <p class="badge mx-1 bg-secondary" style="font-size: 16px">
+                    ReactJs
+                  </p>
+                  <p class="badge mx-1 bg-secondary" style="font-size: 16px">
+                    Next.js
+                  </p>
+                  <p class="badge mx-1 bg-secondary" style="font-size: 16px">
+                    TailwindCss
+                  </p>
+                  <p class="badge mx-1 bg-secondary" style="font-size: 16px">
+                    Framer Motion
+                  </p>
+                  <p class="badge mx-1 bg-secondary" style="font-size: 16px">
+                    React Hook Form
+                  </p>
+                  <p class="badge mx-1 bg-secondary" style="font-size: 16px">
+                    Redux
+                  </p>
+                  <p class="badge mx-1 bg-secondary" style="font-size: 16px">
+                    Zustand
+                  </p>
+                  <p class="badge mx-1 bg-secondary" style="font-size: 16px">
+                    Zod
+                  </p>
+                  <p class="badge mx-1 bg-secondary" style="font-size: 16px">
+                    Tanstack Query
+                  </p>
+                  <p class="badge mx-1 bg-secondary" style="font-size: 16px">
+                    Authorization
+                  </p>
+                </div>
+              </div>
+
+              <div class="">
+                <p class="display-6 fw-bold">Backend:</p>
+                <div class="" style="margin-left: 15px">
+                  <p class="badge mx-1 bg-secondary" style="font-size: 16px">
+                    NodeJs
+                  </p>
+                  <p class="badge mx-1 bg-secondary" style="font-size: 16px">
+                    ExpressJs
+                  </p>
+                  <p class="badge mx-1 bg-secondary" style="font-size: 16px">
+                    NestJs
+                  </p>
+                  <p class="badge mx-1 bg-secondary" style="font-size: 16px">
+                    Zod
+                  </p>
+                  <p class="badge mx-1 bg-secondary" style="font-size: 16px">
+                    Express Validator
+                  </p>
+                  <p class="badge mx-1 bg-secondary" style="font-size: 16px">
+                    Authentication
+                  </p>
+                  <p class="badge mx-1 bg-secondary" style="font-size: 16px">
+                    Authorization
+                  </p>
+                  <p class="badge mx-1 bg-secondary" style="font-size: 16px">
+                    Prisma
+                  </p>
+                  <p class="badge mx-1 bg-secondary" style="font-size: 16px">
+                    Mongoose
+                  </p>
+                  <p class="badge mx-1 bg-secondary" style="font-size: 16px">
+                    Drizzle
+                  </p>
+                  <p class="badge mx-1 bg-secondary" style="font-size: 16px">
+                    RabbitMQ
+                  </p>
+                  <p class="badge mx-1 bg-secondary" style="font-size: 16px">
+                    Database Design
+                  </p>
+                  <p class="badge mx-1 bg-secondary" style="font-size: 16px">
+                    Management
+                  </p>
+                  <p class="badge mx-1 bg-secondary" style="font-size: 16px">
+                    REST API Design and Integration
+                  </p>
+                  <p class="badge mx-1 bg-secondary" style="font-size: 16px">
+                    GraphQL
+                  </p>
+                </div>
+              </div>
+
+              <div class="">
+                <p class="display-6 fw-bold">Database:</p>
+                <div class="" style="margin-left: 15px">
+                  <p class="badge mx-1 bg-secondary" style="font-size: 16px">
+                    MySQL
+                  </p>
+                  <p class="badge mx-1 bg-secondary" style="font-size: 16px">
+                    PostgreSQL
+                  </p>
+                  <p class="badge mx-1 bg-secondary" style="font-size: 16px">
+                    MariaDB
+                  </p>
+                  <p class="badge mx-1 bg-secondary" style="font-size: 16px">
+                    MongoDB
+                  </p>
+                  <p class="badge mx-1 bg-secondary" style="font-size: 16px">
+                    Redis
+                  </p>
+                </div>
+              </div>
+              <div class="">
+                <p class="display-6 fw-bold">Tools:</p>
+                <div class="" style="margin-left: 15px">
+                  <p class="badge mx-1 bg-secondary" style="font-size: 16px">
+                    Git
+                  </p>
+                  <p class="badge mx-1 bg-secondary" style="font-size: 16px">
+                    GitHub
+                  </p>
+                  <p class="badge mx-1 bg-secondary" style="font-size: 16px">
+                    Railway.app
+                  </p>
+                  <p class="badge mx-1 bg-secondary" style="font-size: 16px">
+                    Cursor
+                  </p>
+                  <p class="badge mx-1 bg-secondary" style="font-size: 16px">
+                    Docker
+                  </p>
+                  <p class="badge mx-1 bg-secondary" style="font-size: 16px">
+                    Cloud
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h2 class="text-center display-4 fw-bold text-uppercase mb-4">
+              Education
+            </h2>
+
+            <div>
+              <div
+                class="text-center text-white"
+                style="background-color: #121212; padding: 1rem"
+              >
+                <h5 class="fw-bold mb-1">
+                  Diploma in Engineering<br />
+                  <span class="fw-normal"
+                    >( Jashore Polytechnic Institute )</span
+                  >
+                </h5>
+                <p class="text-light mb-0" style="font-size: 14px">2022–2025</p>
+              </div>
+              <div
+                class="text-center text-white"
+                style="background-color: #121212; padding: 1rem"
+              >
+                <h5 class="fw-bold mb-1">
+                  Higher Secondary in Humanities<br />
+                  <span class="fw-normal">( Padmapukur Degree College )</span>
+                </h5>
+                <p class="text-light mb-0" style="font-size: 14px">2019–2022</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-5">
+      <div class="container">
+        <h2 class="display-5 fw-bold text-uppercase text-center mb-5">
+          Contact with Me
+        </h2>
+        <div class="row justify-content-center">
+          <div class="col-md-8 py-5 contact-shadow">
+            <div class="row justify-content-center">
+              <div class="col-md-6">
+                <form>
+                  <div class="mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Please type your name"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Please type your email"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <textarea
+                      class="form-control"
+                      rows="4"
+                      placeholder="Type your message"
+                    ></textarea>
+                  </div>
+                  <button class="btn btn-primary w-100 d-block">Send</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-center py-3 border-top mt-4">
+      <p class="mb-1">&copy; 2025 Monirul Islam</p>
+      <p class="mb-0">Jashore, Khulna, Bangladesh</p>
+      <div>
+        <a
+          href="https://github.com/codemonkmi"
+          class="text-light mx-2"
+          target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a
+          href="https://linkedin.com/in/codemonkmi"
+          class="text-light mx-2"
+          target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a
+          href="https://facebook.com/codemonkmi"
+          class="text-light mx-2"
+          target="_blank"
+          ><i class="fab fa-facebook"></i
+        ></a>
+      </div>
+    </footer>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
